@@ -2,6 +2,9 @@
 
 S3 benchmarking tool.
 
+Added:
+   --rps-limit flag
+
 # Download
 
 [Download Binary Releases](https://github.com/minio/warp/releases) for various platforms.
