@@ -1,13 +1,13 @@
 name: VulnCheck
-on:
-  pull_request:
-    branches:
-    - master
-    - main
-  push:
-    branches:
-    - master
-    - main
+on: workflow_dispatch
+  # pull_request:
+  #   branches:
+  #   - master
+  #   - main
+  # push:
+  #   branches:
+  #   - master
+  #   - main
 jobs:
   vulncheck:
     name: Analysis
