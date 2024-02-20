@@ -25,7 +25,8 @@ builds:
       - -trimpath
       - --tags=kqueue
     ldflags:
-      - -s -w -X github.com/minio/warp/pkg.ReleaseTag={{.Tag}} -X github.com/minio/warp/pkg.CommitID={{.FullCommit}} -X github.com/minio/warp/pkg.Version={{.Version}} -X github.com/minio/warp/pkg.ShortCommitID={{.ShortCommit}} -X github.com/minio/warp/pkg.ReleaseTime={{.Date}}
+#      - -s -w -X github.com/minio/warp/pkg.ReleaseTag={{.Tag}} -X github.com/minio/warp/pkg.CommitID={{.FullCommit}} -X github.com/minio/warp/pkg.Version={{.Version}} -X github.com/minio/warp/pkg.ShortCommitID={{.ShortCommit}} -X github.com/minio/warp/pkg.ReleaseTime={{.Date}}
+      - -s -w -X github.com/ComputerPers/warp_fork/tree/ratelimiting/pkg.ReleaseTag={{.Tag}} -X github.com/ComputerPers/warp_fork/tree/ratelimiting/pkg.CommitID={{.FullCommit}} -X github.com/ComputerPers/warp_fork/tree/ratelimiting/pkg.Version={{.Version}} -X github.com/ComputerPers/warp_fork/tree/ratelimiting/pkg.ShortCommitID={{.ShortCommit}} -X github.com/ComputerPers/warp_fork/tree/ratelimiting/pkg.ReleaseTime={{.Date}}
 archives:
   -
     name_template: >-
