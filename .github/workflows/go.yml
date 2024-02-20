@@ -9,6 +9,7 @@ on: workflow_dispatch
   #   - master
 
 jobs:
+
   build:
     name: Test on Go ${{ matrix.go-version }} and ${{ matrix.os }}
     runs-on: ${{ matrix.os }}

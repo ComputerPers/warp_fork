@@ -5,6 +5,7 @@ on: workflow_dispatch
   # push:
 
 jobs:
+
   goreleaser:
     runs-on: ubuntu-latest
     steps:
